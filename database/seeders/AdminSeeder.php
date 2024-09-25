@@ -15,8 +15,8 @@ class AdminSeeder extends Seeder
     public function run(): void
     {
       User::create([
-             'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
+             'name' => 'admin',
+            'email' => 'admin@example.com',
             'email_verified_at' => now(),
             'password' => 'password123',
             'remember_token' => Str::random(10),
