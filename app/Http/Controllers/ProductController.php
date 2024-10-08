@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Inertia\Response;
 use App\Http\Resources\ProductResource;
+use App\Http\Requests\CreateProductRequest;
 class ProductController extends Controller
 {
     /**
@@ -24,15 +25,16 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render('Product/ProductDetail');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(CreateProductRequest $request)
     {
-        //
+        Product::create($request->validated());
+        return to_route(route:('products.index'));
     }
 
     /**
