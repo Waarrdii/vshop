@@ -77,9 +77,8 @@ const showingNavigationDropdown = ref(false);
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33" />
+                                    d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
                             </svg>
-
                             <span class="-mr-1 font-medium">Products</span>
                         </SidebarLink>
                     </li>
@@ -88,13 +87,13 @@ const showingNavigationDropdown = ref(false);
 
             <div class="px-6 -mx-6 pt-4 flex justify-between items-center border-t">
                 <Link :href="route('logout')" method="post" as="button"
-                class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group hover:text-red-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                    </svg>
-                    <span class="group-hover:text-red-400">Logout</span>
+                    class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group hover:text-red-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                </svg>
+                <span class="group-hover:text-red-400">Logout</span>
                 </Link>
             </div>
         </aside>
@@ -159,3 +158,5 @@ const showingNavigationDropdown = ref(false);
         </div>
     </div>
 </template>
+
+<!-- https://heroicons.com/ -->
