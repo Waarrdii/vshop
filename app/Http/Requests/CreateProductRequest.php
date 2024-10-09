@@ -24,6 +24,9 @@ class CreateProductRequest extends FormRequest
     {
         return [
             'name' => ['required','string','max:100',Rule::unique(table:'products',column:'name')->ignore($this->role)],
+            'category' => ['required','string','max:100'],
+            'brand' => ['required','string','max:100',],
+            'image_url' => ['string','max:100',Rule::unique(table:'products',column:'name')->ignore($this->role)],
         ];
     }
 }

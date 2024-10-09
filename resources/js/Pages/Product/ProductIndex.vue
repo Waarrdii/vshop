@@ -25,12 +25,16 @@ defineProps(['products'])
                         <TableRow>
                             <TableHeader>ID</TableHeader>
                             <TableHeader>Name</TableHeader>
+                            <TableHeader>Brand</TableHeader>
+                            <TableHeader>Category</TableHeader>
                         </TableRow>
                     </template>
                     <template #default>
                         <TableRow v-for="item in products" :key="item.id" class="border-b">
                             <TableData>{{ item.id }}</TableData>
                             <TableData>{{ item.name }}</TableData>
+                            <TableData>{{ item.brand }}</TableData>
+                            <TableData>{{ item.category }}</TableData>
                         </TableRow>
                     </template>
                 </TableComponent>
